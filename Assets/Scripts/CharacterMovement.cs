@@ -28,7 +28,7 @@ public class CharacterMovement : MonoBehaviour
 
         //rgbd.AddForce(new Vector2(), ForceMode2D.Impulse);
         
-        sfx.Play();
+        //sfx.Play();
         
     }
     
