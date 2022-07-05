@@ -14,6 +14,7 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] private AudioSource sfx;
 
     public float speed;
+    public Vector2 juping;
     void Update()
     {
         
@@ -25,10 +26,14 @@ public class CharacterMovement : MonoBehaviour
     
     private void Jump()
     {
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            rgbd.AddForce(juping, ForceMode2D.Impulse);
+            sfx.Play(); 
+        }
 
         //rgbd.AddForce(new Vector2(), ForceMode2D.Impulse);
         
-        //sfx.Play();
         
     }
     
