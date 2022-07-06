@@ -12,11 +12,11 @@ GameObject:
   - component: {fileID: 3508380262052340859}
   - component: {fileID: 5283650932121566795}
   - component: {fileID: 7812824600776140702}
-  - component: {fileID: 1577828705}
   - component: {fileID: 1577828706}
+  - component: {fileID: 1577828712}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bef114a0055fdea4cb5af6aaaa6cc49a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -122,10 +122,30 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.9, y: 0.9}
+  m_Offset: {x: -0.11542261, y: 0.05163628}
+  m_Size: {x: 0.9607489, y: 1.136921}
   m_Direction: 0
---- !u!82 &1577828705
+--- !u!114 &1577828706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6175734615840495823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16352c9a132b06349be74b4e2c6372fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rgbd: {fileID: 5283650932121566795}
+  sfx: {fileID: 1577828712}
+  speed: 10
+  x: 0
+  y: 0
+  juping: {x: 0, y: 8}
+  jumpAvail: 0
+  startprinting: 0
+--- !u!82 &1577828712
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -135,8 +155,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 2909879eb9bd7ef47b62dffa7a1eccad, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -221,18 +241,3 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1577828706
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6175734615840495823}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16352c9a132b06349be74b4e2c6372fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rgbd: {fileID: 5283650932121566795}
-  sfx: {fileID: 1577828705}
-  speed: 10
